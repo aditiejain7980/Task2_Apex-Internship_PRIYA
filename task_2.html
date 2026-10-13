@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <link rel="stylesheet" href="task_2.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>Task Manager</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#tasks">My Tasks</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="card" id="task">
+            <h2>My Tasks📝</h2>
+            <p class="description">
+                Add your tasks and complete them one by one.
+            </p>
+            <div class="task-input">
+                <input type="text" placeholder="Enter your task...">
+                <button class="addBtn">Add Task</button>
+            </div>
+
+            <ul class="taskList">
+                <!--<li class="task-li">
+                    <span>hello</span>
+                    <button class="delete-btn">delete</button>
+                </li>
+                <li class="todo-li">
+                    <span>hello</span>
+                    <button class="delete-btn">delete</button>
+                </li>-->
+            </ul>
+
+        </div>
+
+        <div class="card" id="contact">
+            <h2>Get In Touch 🌐</h2>
+            <p class="description">Enter your details in the form below.</p>
+
+            <form>
+                <div class="form-inside">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-inside">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-inside">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone" placeholder="Enter a 10-digit mobile number">
+                </div>
+                <div class="form-inside">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write your message..." rows="3"></textarea>
+                </div>
+                <button class="submit-btn">Submit Details</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="task_2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #a5a7a7d2;
+  color: black;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.559);
+  display: flex;
+  padding-right: 10px;
+  background: #333;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.navbar h2 {
+  font-size: 35px;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.nav-links {
+  font-size: 20px;
+  margin: auto 7px 10px auto;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #efb66c;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 33px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #1c3e60ee;
+  border: 1px solid #444444;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding-bottom: 30px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+.card h2 {
+  font-size: 30px;
+  color: rgb(227, 238, 243);
+  margin-left: 15px;
+}
+
+.card p {
+  color: rgb(197, 226, 238);
+  font-size: 18px;
+  margin-left: 18px;
+  margin-top: -2px;
+}
+
+.task-input {
+  padding: 18px;
+}
+
+.task-input input {
+  border: 1px solid #2669a3;
+  background-color: #e6eaeec6;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 16px;
+  outline: none;
+
+}
+
+.task-input input:focus {
+  border: 2px solid #d69062;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+}
+
+.btn {
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+.taskList {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.task-li {
+  background-color: #e6eaeec6;
+  margin: -5px 18px 20px 18px;
+  border: 1px solid rgb(229, 224, 224);
+  border-radius: 5px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.delete-btn {
+  background-color: #ca5710;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+.form-inside {
+  margin-bottom: 25px;
+}
+
+.form-inside label {
+  display: block;
+  color: #faf7f7;
+  margin: 0 auto 4px 18px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-inside input,
+.form-inside textarea {
+  background-color: #e6eaeec6;
+  width: 90%;
+  margin: 0 20px 10px 15px;
+  padding: 12px 12px;
+  border: none;
+  border: 1px solid #2669a3;
+  border-radius: 5px;
+  color: rgb(12, 11, 11);
+  font-weight: 500;
+  resize: none;
+}
+
+.form-inside input:focus,
+.form-inside textarea:focus {
+  border: 1px solid #f2a532;
+  outline: none;
+}
+
+.submit-btn {
+  background: #ff9800;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  margin: -15px auto 0 18px;
+}
+
+.submit-btn:hover {
+  background: #e68900;
+}
+
+.task-input {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.task-input button {
+  background: #ff9800;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background: #e68900;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .navbar h2 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+    margin-bottom: -5px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .card {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  .task-input {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .task-input input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .task-input button {
+    margin: 0 auto;
+    align-content: center;
+    width: 50%;
+  }
+
+  .task-li {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .delete-btn {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .form-inside {
+    margin-bottom: 20px;
+  }
+
+  .form-inside input,
+  .form-inside textarea {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+}
